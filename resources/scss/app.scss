@@ -1,5 +1,21 @@
 @import './partials/reset';
 
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Tilt+Neon&display=swap');
+
+// Regole Generali
+body {
+    background-color: #525251;
+}
+
+h1 {
+    font-family: 'Rubik Iso', cursive;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    color: #F8D09B;
+}
+
 .main-container {
     width: 80%;
     margin: 0 auto;
@@ -15,15 +31,25 @@
 
 .card {
     width: calc(100% / 5 - 30px);
-    height: 300px;
+    min-height: 300px;
     margin: 0 15px;
     padding: 15px;
-    background-color: cornsilk;
-    border: 2px solid gray;
+    background-color: #79565F;
+    border: 5px solid #C6B59C;
     border-radius: 15px;
+    color: #C6B59C;
+    font-family: 'Tilt Neon', cursive;
     h2 {
+        font-family: 'Rubik Iso', cursive;
         text-align: center;
         margin-bottom: 15px;
+        color: #F8D09B;
+    }
+    h3 {
+        color: #F8D09B;
+    }
+    b {
+        color: #F8D09B;
     }
     p {
         margin: 10px 0;
