@@ -7,7 +7,7 @@
         <!--Favicon-->
         <link rel="shortcut icon" type="image/png" href="{{ Vite::asset('resources/img/...') }}">
 
-        <title>Laravel</title>
+        <title>Laravel Movies</title>
 
         <!-- Fonts -->
 
@@ -20,8 +20,16 @@
         
     </head>
     <body>
+
+        @foreach ($movies as $movie)
        
-        <h1>Hello World</h1>
+        <div class="card">
+
+            <p>{{ $movie->title }}</p>
+
+        </div>
+
+        @endforeach
 
     </body>
 </html>
