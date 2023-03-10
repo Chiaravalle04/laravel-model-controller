@@ -1,14 +1,13 @@
-TEMPLATE:
+Oggi facciamo la nostra prima vera interazione con il database utilizzando l'ORM di Laravel.
+1. - Create un nuovo progetto Laravel 9
+2. - tramite phpMyAdmin create un nuovo database laravel_model_controller
+3. - Importate nel vostro database la tabella movies in allegato
+4. - inserite le vostre credenziali per il database nel file .env
+5. - Create un model Movie
+`php artisan make:model Movie`
+6. - Create un controller che gestirà la rotta /
+`php artisan make:controller Guest/PageController`
+7. - All'interno della funzione index() del controller, recuperate tutti i film dal database e passateli alla view, che quindi li visualizzerà a schermo, tramite delle card.
 
-- LARAVALE + VITE + SCSS
-
-Passi da effettuare per UTILIZZARE questo template:
-1. Aprire questa repository su github e cliccare sul pulsante `Use this template` > `Create a new repository`
-2. Clonare la repository appena creata su VS Code
-3. Aprire il terminale
-4. Copiare il file `.env.example` e rinominarlo in `.env`
-5. Eseguire il comando `composer install`
-6. Eseguire il comando `php artisan key:generate`
-7. Eseguire il comando `npm i` o `npm install`
-8. Aprire un secondo terminale
-9. In uno dei due terminali, eseguire il comando `php artisan serve`. Nell'altro, `npm run dev`
+- BONUS:
+Stilare il layout nei dettagli con Sass
