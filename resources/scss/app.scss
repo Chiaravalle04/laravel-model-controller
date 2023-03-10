@@ -1,2 +1,32 @@
 @import './partials/reset';
 
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-card {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(100% / 5 - 30px);
+    height: 300px;
+    margin: 0 15px;
+    padding: 15px;
+    background-color: cornsilk;
+    border: 2px solid gray;
+    border-radius: 15px;
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    p {
+        margin: 10px 0;
+    }
+}
+

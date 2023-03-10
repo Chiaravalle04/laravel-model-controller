@@ -21,15 +21,31 @@
     </head>
     <body>
 
-        @foreach ($movies as $movie)
-       
-        <div class="card">
+        <div class="main-container">
 
-            <p>{{ $movie->title }}</p>
+            <div class="container-card">
+                
+                @foreach ($movies as $movie)
+               
+                <div class="card">
+        
+                    <h2>{{ $movie->title }}</h2>
+        
+                    <h3>{{ $movie->original_title }}</h3>
+        
+                    <p><b>Nazionalità:</b> {{ $movie->nationality }}</p>
+        
+                    <p><b>Data:</b> {{ $movie->date }}</p>
+        
+                    <p><b>Voto:</b> {{ $movie->vote }}</p>
+        
+                </div>
+        
+                @endforeach
+
+            </div>
 
         </div>
-
-        @endforeach
 
     </body>
 </html>
